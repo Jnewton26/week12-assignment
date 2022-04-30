@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Time Using full CRUD CRUD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" src="week12CRUD.css">
+
+    <style>
+        input[type='submit'],
+        button,
+        [aria-label] {
+            cursor: pointer;
+        }
+
+        #spoiler {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <div class="bd-example">
+        <div class="alert alert-success" role="alert">
+            <h2 class="alert-heading">My To Do List!</h2>
+            <h4> Here are the Contexts:</h4>
+            <p>-Around the house <br>-Errands<br>-Family Meeting<br>-Outdoors<br>-Desk/Office<br>-Phone Talking/Texting
+            </p>
+            <hr>
+            <p class="mb-0">Don't forget to DELETE a TASK when you have completed it. </p>
+        </div>
+        <div id=new-todolist class="jumbotron text-black bg-light mb-3">
+            <h2>Create Task Adding Context</h2>
+            <input type="text" id="new-todolist-type" class="form-control"> <br>
+            <button id="create-new-todolist" class="btn btn-primary form-control">Create</button>
+        </div>
+        <div id="app">
+        </div>
+
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="week12CRUD.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
